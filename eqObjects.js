@@ -22,7 +22,7 @@ const eqArrays = function(arr1,arr2) {
 const eqObjects = function(object1, object2) {
   //have same number of keys;
   const keys1 = Object.keys(object1);
-  console.log(keys1)
+  console.log(keys1);
   const keys2 = Object.keys(object2);
   if (keys1.length !== keys2.length) {
     return false;
@@ -65,7 +65,7 @@ assertEqual(eqObjects(cd, cd2),false); // => false
 console.log('////////////////////');
 
 
-console.log(eqObjects({ a: { z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 }));// => true
+console.log(eqObjects({ a: { z: [3]}, b: 2 }, { a: { z: [3]}, b: 2 }));// => true
 
 console.log(eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 }));// => false
 console.log(eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: 1, b: 2 }));// => false

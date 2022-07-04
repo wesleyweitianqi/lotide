@@ -25,9 +25,9 @@ const map = function(array, callback) {
   }
   return results;
 };
-const result3 = map(words,function(word,index) {
+const result3 = map(words,function(word) {
   return words.indexOf(word);
-})
+});
 const results2 = map(words, item => item.length);
 const results1 = map(words, word => word[0]);
 console.log(results1);
