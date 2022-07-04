@@ -13,7 +13,7 @@ describe('#tail', () => {
     const words = [2];
     tail(words);
     assert.equal(words.length, 1);
-    assert.equal(tail(words).length,2);
+    assert.equal(tail(words).length,0);
   });
 });
 
